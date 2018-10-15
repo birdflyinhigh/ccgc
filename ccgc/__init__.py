@@ -52,6 +52,14 @@ def creat_app(env):
     # 使用flask session, 用redis保存app的session数据
     Session(app)
 
+    # 添加api蓝图
+    from ccgc.views import api
+    app.register_blueprint(api, url_prefix='/api')
+
+    # app添加静态页面蓝图应用
+    from .web_page import html as html_blueprint
+    app.register_blueprint(html_blueprint)
+
     return app
 
 
