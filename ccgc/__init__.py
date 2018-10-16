@@ -54,7 +54,7 @@ def creat_app(env):
 
     # 添加api蓝图
     from ccgc.views import api
-    app.register_blueprint(api, url_prefix='/api')
+    app.register_blueprint(api, url_prefix='/api/v1.0')
 
     # app添加静态页面蓝图应用
     from .web_page import html as html_blueprint
