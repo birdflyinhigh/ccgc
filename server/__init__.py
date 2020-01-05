@@ -28,7 +28,7 @@ csrf = CSRFProtect()
 # 设置日志等级
 logging.basicConfig(level=logging.DEBUG)
 # 创建日志记录起,限定保存路径,文件最大大小, 日志文件个数上限
-file_log_handler = RotatingFileHandler('./logs/ccgc.log', maxBytes=1024 * 1024 * 100, backupCount=10)
+file_log_handler = RotatingFileHandler('./logs/server.log', maxBytes=1024 * 1024 * 100, backupCount=10)
 # 创建日志格式
 formatter = logging.Formatter('%(levelname)s %(filename)s:%(lineno)d %(message)s')
 # 设置日志格式
@@ -53,12 +53,12 @@ def creat_app(env):
     Session(app)
 
     # 添加api蓝图
-    from ccgc.views import api
-    app.register_blueprint(api, url_prefix='/api/v1.0')
+    from server.views import api
+    app.register_blueprint(api, url_prefix='/quiz')
 
-    # app添加静态页面蓝图应用
-    from .web_page import html as html_blueprint
-    app.register_blueprint(html_blueprint)
+    # # app添加静态页面蓝图应用
+    # from .web_page import html as html_blueprint
+    # app.register_blueprint(html_blueprint)
 
     return app
 
