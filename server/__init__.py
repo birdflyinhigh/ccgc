@@ -26,13 +26,13 @@ redis_store = redis.StrictRedis(host=Config.REDIS_HOST, port=Config.REDIS_PORT)
 csrf = CSRFProtect()
 
 # 设置日志等级
-logging.basicConfig(level=logging.DEBUG)
-# 创建日志记录起,限定保存路径,文件最大大小, 日志文件个数上限
-file_log_handler = RotatingFileHandler('./logs/server.log', maxBytes=1024 * 1024 * 100, backupCount=10)
-# 创建日志格式
-formatter = logging.Formatter('%(levelname)s %(filename)s:%(lineno)d %(message)s')
-# 设置日志格式
-file_log_handler.setFormatter(formatter)
+# logging.basicConfig(level=logging.DEBUG)
+# # 创建日志记录起,限定保存路径,文件最大大小, 日志文件个数上限
+# file_log_handler = RotatingFileHandler('./logs/server.log', maxBytes=1024 * 1024 * 100, backupCount=10)
+# # 创建日志格式
+# formatter = logging.Formatter('%(levelname)s %(filename)s:%(lineno)d %(message)s')
+# # 设置日志格式
+# file_log_handler.setFormatter(formatter)
 
 
 # 使用工厂模式创建app
