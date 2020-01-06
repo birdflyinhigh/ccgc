@@ -1,27 +1,34 @@
 body {
-  background: #f0f0f0;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: rgb(250, 250, 250);
 }
-
 
 
 #components-layout-demo-custom-trigger .trigger {
-  font-size: 18px;
-  line-height: 64px;
-  padding: 0 24px;
-  cursor: pointer;
-  transition: color 0.3s;
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
 }
 
 #components-layout-demo-custom-trigger .trigger:hover {
-  color: #1890ff;
+    color: #1890ff;
 }
 
 .logo {
-  height: 20px;
-  background: url('assets/logo.svg') no-repeat center;
+    height: 20px;
+    background: url('assets/logo.svg') no-repeat center;
 }
 
 .navbar-dark .navbar-brand {
     color: #fff;
     width: 100px;
 }
+
+
+.bg-litmus {
+    background: rgb(27, 35, 46);
+}
+
+

@@ -8,10 +8,9 @@ const {SubMenu} = Menu;
 const {Header, Content, Footer, Sider} = Layout;
 
 
-
 const App = () => (<Layout>
     <Layout>
-        <Sider width={200} style={{background: '#fff'}}>
+        <Sider width={200} style={{background: 'rgb(27,35,46)'}}>
             <Menu
                 mode="inline"
                 defaultSelectedKeys={['1']}
@@ -62,18 +61,15 @@ const App = () => (<Layout>
                 </SubMenu>
             </Menu>
         </Sider>
-        <Layout style={{padding: '0 24px 24px'}}>
-            <Breadcrumb style={{margin: '16px 0'}}>
-                <Breadcrumb.Item>Home</Breadcrumb.Item>
-                <Breadcrumb.Item>List</Breadcrumb.Item>
-                <Breadcrumb.Item>App</Breadcrumb.Item>
-            </Breadcrumb>
+        <Layout style={{padding: '24px 24px 24px 24px'}}>
             <Content
                 style={{
                     background: '#fff',
                     padding: 24,
                     margin: 0,
-                    height: '75vh'
+                    height: '75vh',
+                    flexDirection: 'column',
+                    boxShadow: '0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12)'
                 }}
             >
                 <DataList/>
@@ -82,7 +78,7 @@ const App = () => (<Layout>
             <Footer style={{textAlign: 'center'}}>Copyright © 2021 Litmus Automation. All rights reserved.</Footer>
         </Layout>
     </Layout>
-</Layout>);
+    < /Layout>);
 
-export default App;
+        export default App;
 

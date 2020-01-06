@@ -12,19 +12,14 @@ class NavBar extends React.PureComponent {
 
 
         return (
-            <Navbar bg="dark" variant="dark">
+            <Navbar bg="litmus" variant="dark">
                 <Navbar.Brand href="#home">
                     {/*<div className={'logo'}/>*/}
                     Canvas Editor
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto">
-                        <Nav.Link> <Link to="/">Home</Link></Nav.Link>
-                        <Nav.Link> <Link to="/quiz">
-                            Words
-                        </Link></Nav.Link>
-                    </Nav>
+                    <Nav className="mr-auto"/>
                     <Form inline>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2"/>
                         <Button variant="outline-success">Search</Button>
