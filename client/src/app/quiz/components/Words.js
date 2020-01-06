@@ -79,7 +79,7 @@ const App = () => (<Layout>
                 <DataList/>
             </Content>
 
-            <Footer style={{textAlign: 'center'}}>Litmus Automation ©2020 ALL RIGHTS RESERVED</Footer>
+            <Footer style={{textAlign: 'center'}}>Copyright © 2021 Litmus Automation. All rights reserved.</Footer>
         </Layout>
     </Layout>
 </Layout>);
